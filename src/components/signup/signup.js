@@ -5,6 +5,8 @@ import CustomButton from "../custom-button/custom-button";
 
 import { auth, createUserProfileDocument } from "../../firebase/firebase.utils";
 
+import "./signup.scss";
+
 class SignUp extends React.Component {
   constructor() {
     super();
@@ -12,7 +14,7 @@ class SignUp extends React.Component {
     this.state = {
       displayName: "",
       email: "",
-      passowrd: "",
+      password: "",
       confirmPassword: ""
     };
   }
@@ -38,7 +40,7 @@ class SignUp extends React.Component {
       this.setState({
         displayName: "",
         email: "",
-        passowrd: "",
+        password: "",
         confirmPassword: ""
       });
     } catch (error) {
